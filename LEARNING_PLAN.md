@@ -76,7 +76,7 @@ lab-automation-playground/
 │   ├── 01_job_market/
 │   │   └── NOTES.md
 │   ├── 04_first_transfer/
-│   │   ├── first_transfer.py   ← today's plr_demo.py moves here
+│   │   ├── first_transfer.py   ← the original plr_demo.py, moved here in lesson 03
 │   │   └── NOTES.md
 │   ├── 18_worklists/
 │   │   ├── make_worklists.py
@@ -126,8 +126,8 @@ Why this shape:
 ### Phase 0 — Week 1: Foundations
 
 - [x] **01 Job market.** Collect 10 postings that mention Hamilton, Tecan or Beckman. List the skills they ask for in `NOTES.md`. You'll come back to this list in week 12.
-- [ ] **02 Git basics.** Saving a version (*commit*), uploading it to GitHub (*push*), and viewing your history.
-- [ ] **03 Reorganise the repo.** Create the folders from section 4 together, and move `plr_demo.py` into lesson 04.
+- [x] **02 Git basics.** Saving a version (*commit*), uploading it to GitHub (*push*), and viewing your history.
+- [x] **03 Reorganise the repo.** Create the folders from section 4 together, and move `plr_demo.py` into lesson 04.
 - [ ] **04 First transfer, line by line.** What the deck, carriers, rails and *backend* (the part that talks to the robot, or pretends to) are, and what `async`/`await` do.
 - [ ] **05 Python warm-up, lab edition.** Generate well names A1–H12 with loops, store a plate map in a dictionary, write a C1V1 = C2V2 function, and print a serial dilution table. No robot yet.
 

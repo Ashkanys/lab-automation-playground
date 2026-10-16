@@ -23,7 +23,7 @@ Fill these in as we go.
 | Command | What it does | When I'd use it |
 |---|---|---|
 | `git status` |shows you what is and is not in the working staged | to check if the files I want are ready to be commited |
-| `git diff` |shows the difference between different commits | |
+| `git diff` |shows the difference between your uncommited changes and compare it to the las commit | |
 | `git add <file>` |adds files to the staging area | |
 | `git commit -m "..."` |stamping the working stage with a message | |
 | `git log --oneline` |shows the entries of your commits  | |
