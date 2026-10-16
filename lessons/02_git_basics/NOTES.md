@@ -23,8 +23,8 @@ Fill these in as we go.
 | Command | What it does | When I'd use it |
 |---|---|---|
 | `git status` |shows you what is and is not in the working staged | to check if the files I want are ready to be commited |
-| `git diff` |shows the differenc between differnt commits | |
-| `git add <file>` |adds files to the wrking stage | |
+| `git diff` |shows the difference between different commits | |
+| `git add <file>` |adds files to the staging area | |
 | `git commit -m "..."` |stamping the working stage with a message | |
 | `git log --oneline` |shows the entries of your commits  | |
 | `git push` |sending your stamped snapshots to GitHub | |
@@ -35,12 +35,12 @@ Fill these in as we go.
 
 ## What I learned
 
--  for git diff: before staging, to review exactly what I changed
+- for git diff: before staging, to review exactly what I changed
 - it is OK to commit as many changes as you want. breaking part commits to smaller edits, helps troubleshooting and moving back to a previous step easier, rather than waiting for a big change before you commit
 
 ## Interview talking point
 
 One sentence on why version control matters for automation methods (hint: posting 8 in lesson 01 asks for code "managed under version control" and "change control"):
 
-- it is important to keep track of all the changes, so that if something goes wrong down the road, we can track what broke and what worked better, etc.
+- Every change to a method is a reviewed, dated commit with a reason, so when a run fails I can see exactly what changed since the last good run and roll back. That's the same idea as change control in a regulated lab.
 
