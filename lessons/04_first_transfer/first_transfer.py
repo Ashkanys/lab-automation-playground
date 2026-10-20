@@ -8,8 +8,8 @@ from pylabrobot.resources.hamilton import STARLetDeck
 from pylabrobot.resources import (
     TIP_CAR_480_A00,
     PLT_CAR_L5AC_A00,
-    Cor_96_wellplate_360ul_Fb,
-    hamilton_96_tiprack_1000uL_filter,
+    cor_96_wellplate_360uL_Fb,
+    hamilton_96_tiprack_300uL_filter,
     set_tip_tracking,
     set_volume_tracking,
 )
@@ -37,7 +37,7 @@ async def main():
     # Add a tip carrier and rack.
     tip_carrier = TIP_CAR_480_A00(name="tip_carrier")
 
-    tip_rack = hamilton_96_tiprack_1000uL_filter(
+    tip_rack = hamilton_96_tiprack_300uL_filter(
         name="tips_01",
         with_tips=False,
     )
@@ -50,8 +50,8 @@ async def main():
     # Add two plates.
     plate_carrier = PLT_CAR_L5AC_A00(name="plate_carrier")
 
-    source_plate = Cor_96_wellplate_360ul_Fb(name="source_plate")
-    destination_plate = Cor_96_wellplate_360ul_Fb(name="destination_plate")
+    source_plate = cor_96_wellplate_360uL_Fb(name="source_plate")
+    destination_plate = cor_96_wellplate_360uL_Fb(name="destination_plate")
 
     plate_carrier[0] = source_plate
     plate_carrier[1] = destination_plate
@@ -69,13 +69,15 @@ async def main():
     await asyncio.sleep(5)
 
     # Simulate one transfer.
+    transfer_volume_ul = 150
+    
     await lh.pick_up_tips(tip_rack["A2"])
     await asyncio.sleep(1)
 
-    await lh.aspirate(source_plate["A2"], vols=[150])
+    await lh.aspirate(source_plate["A2"], vols=[transfer_volume_ul])
     await asyncio.sleep(1)
 
-    await lh.dispense(destination_plate["A2"], vols=[150])
+    await lh.dispense(destination_plate["A2"], vols=[transfer_volume_ul])
     await asyncio.sleep(1)
 
     await lh.return_tips()

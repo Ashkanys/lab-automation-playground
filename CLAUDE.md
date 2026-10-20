@@ -8,7 +8,7 @@ A learning and prototyping playground for hardware-agnostic lab automation with 
 
 ## Working in this repo
 
-This is a learning repo, and `LEARNING_PLAN.md` is the roadmap. Lessons are numbered folders under `lessons/`, added as the owner reaches them, each with its own `NOTES.md`. The original root-level `plr_demo.py` was moved (lesson 03) to `lessons/04_first_transfer/first_transfer.py`; don't edit it before lesson 04 walks through it. Files matching `*_private.md` are git-ignored on purpose (e.g. full job postings) — keep personal material in them, never in committed files, because the GitHub repo is public.
+This is a learning repo, and `LEARNING_PLAN.md` is the roadmap. Lessons are numbered folders under `lessons/`, added as the owner reaches them, each with its own `NOTES.md`. The original root-level `plr_demo.py` was moved (lesson 03) to `lessons/04_first_transfer/first_transfer.py`, where lesson 04 walked through it and switched it to 300 µL tips. Files matching `*_private.md` are git-ignored on purpose (e.g. full job postings) — keep personal material in them, never in committed files, because the GitHub repo is public.
 
 - Follow the lesson routine in `LEARNING_PLAN.md` §5: plain-English protocol first, then small code, then a walkthrough of *why* each part exists.
 - Code must be readable by a Python beginner: one new concept per lesson, scripts under ~80 lines, plain functions/lists/dicts (classes only with an explanation), units in variable names (`volume_ul`), comments that give the lab reason.
