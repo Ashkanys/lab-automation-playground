@@ -32,8 +32,8 @@ Plate A: 200 µL PBS in every well. Plate B: empty. Tip rack full.
 Plate A well A2: 50 µL. Plate B well A2: 150 µL. Tip back in position A2.
 
 ## 2. Deck plan
-    1. Tip carrier on rail 15, tip rack on position 0
-    2. plate carrier on rail 8, plate A (source_plate) on position 1 and plate B (destination_plate) on position 1
+1. Tip carrier on rail 15, tip rack on position 0
+2. plate carrier on rail 8, plate A (source_plate) on position 0 and plate B (destination_plate) on position 1
 
 ## 3. Code walkthrough: words in my own words
 
@@ -52,4 +52,4 @@ Plate A well A2: 50 µL. Plate B well A2: 150 µL. Tip back in position A2.
 
 ## Interview talking point
 
--
+- When I left out await on the aspirate step, I was expecting the aspirate to still run. instead the error appeared on dispense, which confused me at first. Then I realised the aspirate never ran at all: await doesn't just wait for a command, it is what makes the command run. This taught me that if a similar error happens on a real setup, I should read back through the earlier steps to find where the problem actually started.

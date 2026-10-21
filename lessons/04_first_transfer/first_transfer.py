@@ -69,8 +69,8 @@ async def main():
     await asyncio.sleep(5)
 
     # Simulate one transfer.
-    transfer_volume_ul = 150
-    
+    transfer_volume_ul = 150  # this will ensure the aspirate and dispense volumes are the same. also the aspirate volume is less than the source well volume, so it will not throw an error or issue collecting the last few drops.
+
     await lh.pick_up_tips(tip_rack["A2"])
     await asyncio.sleep(1)
 
