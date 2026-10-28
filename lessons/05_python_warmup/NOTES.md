@@ -25,3 +25,10 @@
 2. Although, extra attention should be paid into how the units are recorded. A simple unit slip can cause huge error in calculation, which Python itself could not detect or catch.
 3. Certain guardrails should be placed to catch not-reasonable results.
 4. "print" only warns and the script keeps going; "raise" stops it, so the bad volume never gets used. The traceback shows where it stopped (read it from the bottom up). Later, "try/except" can catch a specific error type and handle it, like pausing for a refill.
+
+## Part 4 serial dilution
+**Goal:** to combine a loop, a dictionary and the C1V1 function into a serial dilution table for row A of a 96-well plate
+
+**what I learned:**
+1. in writing a loop fuction, extra attention should be paid to the order of the steps. Is plate name is saved before the dilutaion calculation or after. without looking at the final print out, this type of error won't be cought.
+2. adding "dilution_factor" to the code would make it easy to caluculate the final concentration, but don't forget to add it in your calculation for Media:drug mixing volume calculation
