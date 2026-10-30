@@ -133,7 +133,7 @@ Why this shape:
 
 ### Phase 1 — Weeks 2–4: Pipetting basics on a simulated Hamilton STARlet
 
-- [ ] **06 Deck and labware.** Carriers and rails, the standard plate footprint (ANSI/SLAS), well shapes, and dead volume.
+- [x] **06 Deck and labware.** Carriers and rails, the standard plate footprint (ANSI/SLAS), well shapes, and dead volume.
 - [ ] **07 Channels and tips.** One channel vs 8 channels, and when to change tips (contamination risk vs cost and time).
 - [ ] **08 Adding a reagent to a plate.** From a trough to all 96 wells, including multi-dispensing (one aspiration, several dispenses) and why it needs a little extra liquid to stay accurate.
 - [ ] **09 Serial dilution.** Across a row, with mixing, and the carry-over problem.
