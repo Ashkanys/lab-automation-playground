@@ -134,7 +134,7 @@ Why this shape:
 ### Phase 1 — Weeks 2–4: Pipetting basics on a simulated Hamilton STARlet
 
 - [x] **06 Deck and labware.** Carriers and rails, the standard plate footprint (ANSI/SLAS), well shapes, and dead volume.
-- [ ] **07 Channels and tips.** One channel vs 8 channels, and when to change tips (contamination risk vs cost and time).
+- [x] **07 Channels and tips.** One channel vs 8 channels, and when to change tips (contamination risk vs cost and time).
 - [ ] **08 Adding a reagent to a plate.** From a trough to all 96 wells, including multi-dispensing (one aspiration, several dispenses) and why it needs a little extra liquid to stay accurate.
 - [ ] **09 Serial dilution.** Across a row, with mixing, and the carry-over problem.
 - [ ] **10 Liquid classes.** Compare PyLabRobot's Hamilton settings for water, glycerin, ethanol, serum and DMSO. Connect each setting (flow rate, air gap, blow-out, settling time, over-aspirate, clot retract) to bench habits you already have: reverse pipetting, pre-wetting, avoiding foam.
