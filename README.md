@@ -4,6 +4,10 @@ Liquid-handling protocols written in Python with [PyLabRobot](https://github.com
 
 Everything runs in software. The simulation backend logs each command instead of moving a robot. PyLabRobot reaches real hardware by swapping that backend, but nothing in this repo has run on a physical instrument yet.
 
+![PyLabRobot Visualizer: 8 channels fill two 96-well plates from a reagent trough](docs/images/lesson08_multi_dispense.gif)
+
+*[Lesson 08](lessons/08_reagent_to_plate/) in PyLabRobot's Visualizer: 8 channels pick up tips and fill two 96-well plates with 50 µL per well from the trough, 5 columns per aspiration. The wells darken only slightly because the Visualizer shades a well by how full it is, and 50 µL is 14% of a 360 µL well.*
+
 ## About me
 
 I'm a PhD-trained engineer and scientist with hands-on experience in mammalian cell culture, bioreactor development, and high-throughput laboratory workflows. I'm pursuing laboratory automation roles, as a scientist or engineer, because I'm interested in making complex biological workflows more efficient, reproducible, and scalable.
