@@ -26,6 +26,8 @@ python lessons/04_first_transfer/first_transfer.py
 
 `first_transfer.py` starts the PyLabRobot browser Visualizer at http://127.0.0.1:1337, waits 5 s so you can open it, runs one simulated transfer, then blocks on `input()` until Enter is pressed. It is interactive — don't run it in a context that can't send Enter (or pipe `echo |` into it).
 
+`lessons/08_reagent_to_plate/volumes_from_settings.py` (the README GIF) waits for Enter twice: before the run, so a GIF recording can be started, and before `vis.stop()`, because the browser fetches `gif.worker.js` from the Visualizer's server to build the GIF and hangs at 0% if the server is gone. It uses `liquid_color="000080"` because 50 µL in a 360 µL well is only a 14% tint, and the default amber disappears in the recorder's JPEG frames.
+
 There is no test suite, linter, or build step.
 
 ## How the scripts are structured
